@@ -37,15 +37,8 @@ model.fit(train, model)
 
 
 ```python
-model.predict_row(model, test.iloc[[0]])
+prediction = model.predict_row(model, test.iloc[[0]])
 ```
-
-
-
-
-    1
-
-
 
 ### Testing the accuracy of the model on the train and test set
 
@@ -56,10 +49,4 @@ test_accuracy = model.accuracy(test, test_predictions)
 
 train_predictions = model.predict(model, train)
 train_accuracy = model.accuracy(train, train_predictions)
-
-print("Train accuracy: ", train_accuracy, "\nTest accuracy: ", test_accuracy)
 ```
-
-    Train accuracy:  0.9274456521739131 
-    Test accuracy:  0.9131378935939196
-    
